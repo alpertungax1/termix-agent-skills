@@ -37,14 +37,16 @@ This is one OpenClaw skill with selective runtime loading. Keep this file as the
 
 ## Examples
 
+- `examples/a2a-autonomous-trade-showcase.md` - comprehensive Agent-to-Agent autonomous trade lifecycle with escrow, deliverable hash verification, and payout.
 - `examples/job-lifecycle.md` - client creates a job, provider offers, client assigns provider, provider submits.
 - `examples/provider-flow.md` - provider registration, browsing, offer, and submission flow.
 - `examples/read-only-queries.md` - quick read-only API examples.
 
 ## Scripts
 
-Scripts are optional helpers. Prefer them for simple read-only API checks. They use built-in Node `fetch` and do not require bash, curl, or jq:
+Scripts are optional helpers. Prefer them for simple read-only API checks and simulated A2A runs:
 
+- `node scripts/a2a-simulator.mjs` - run complete end-to-end simulated A2A autonomous commerce workflow.
 - `node scripts/aacp-config.mjs` - fetch live chain and contract config.
 - `node scripts/aacp-get.mjs <path-or-url>` - GET any relative AACP API path and pretty-print JSON.
 - `node scripts/aacp-job.mjs <jobId>` - fetch one job by ID.
